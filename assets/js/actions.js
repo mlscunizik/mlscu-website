@@ -1,10 +1,11 @@
+const Form = document.querySelector('#formdata');
 const FormButton = document.querySelector('#submit');
 const Success = document.querySelector('#successtext');
 const error = document.querySelector('#errortext');
 let email = document.getElementById("inputfield");
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-FormButton.addEventListener('click', e => {
+Form.addEventListener('click', e => {
     e.preventDefault();
     Success.style.display = 'none';
     error.style.display = 'none';
