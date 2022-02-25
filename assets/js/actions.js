@@ -9,6 +9,7 @@ Form.addEventListener('click', e => {
     e.preventDefault();
     Success.style.display = 'none';
     error.style.display = 'none';
+    processForm(Form);
 
     if (email.value.length == 0) {
       error.innerHTML = "Please enter an email address";
@@ -27,13 +28,13 @@ Form.addEventListener('click', e => {
         FormButton.appendChild(newSpan);
 
 
-        let myForm = document.getElementById("formdata");
-        let formData = new FormData(myForm);
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
+        const processForm = form => {
+          const data = new FormData(form)
+          data.append('form-name', 'Subscribers');
+          fetch('/', {
+            method: 'POST',
+            body: data,
+          })
             .then(() => {
                 Success.style.display = 'block';
                 newSpan.classList.remove('loader');
@@ -56,7 +57,7 @@ Form.addEventListener('click', e => {
                 email.innerHTML = "";
               }, 3000);
             });
-
+        }
 
         // setTimeout(() => {
         //     Success.style.display = 'block';
