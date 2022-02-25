@@ -26,7 +26,7 @@ FormButton.addEventListener('click', e => {
         FormButton.appendChild(newSpan);
 
 
-        let myForm = document.getElementById("inputfield");
+        let myForm = document.getElementById("form");
         let formData = new FormData(myForm);
         fetch("/", {
             method: "POST",
