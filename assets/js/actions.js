@@ -44,7 +44,23 @@ FormButton.addEventListener('click', e => {
                   Success.style.display = 'none';
                 }, 3000);
             })
-            .catch((error) => alert(error));
+            .catch((error) => {
+              // alert(error);
+
+              error.innerHTML = error;
+              error.style.display = 'block';
+
+              setTimeout(() => {
+                error.style.display = 'none';
+              }, 3000);
+            });
+
+      //        catch (e) {
+      //   console.log(e)
+      //   buttonEl.innerHTML = 'Request Access';
+      //   buttonEl.disabled = false;
+      //   errorField.innerHTML = 'Something went wrong, please try again';
+      // }
 
 
         // setTimeout(() => {
