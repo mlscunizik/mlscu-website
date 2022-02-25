@@ -56,20 +56,12 @@ FormButton.addEventListener('click', e => {
               }, 3000);
             });
 
-      //        catch (e) {
-      //   console.log(e)
-      //   buttonEl.innerHTML = 'Request Access';
-      //   buttonEl.disabled = false;
-      //   errorField.innerHTML = 'Something went wrong, please try again';
-      // }
-
 
         // setTimeout(() => {
         //     Success.style.display = 'block';
         //     newSpan.classList.remove('loader');
         //     FormButton.disabled = false;
         //     FormButton.innerHTML = "Subscribe";
-        //     Success.hide(3000);
         //   }, 3000);
 
         } else {
