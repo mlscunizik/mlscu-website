@@ -1906,15 +1906,6 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 
-.loader {
-  border: 3px solid white;
-  border-top: 3px solid #34db5e;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  animation: spin 1s linear infinite;
-}
-
 .sosmed-button a {
   display: inline-block;
   width: 40px;

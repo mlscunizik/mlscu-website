@@ -1,0 +1,56 @@
+.loader {
+    margin: 0 auto;
+    border: 3px solid white;
+    border-top: 3px solid #6C55F9;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  #submit {
+    width: 100%;
+    position: static;
+    margin-top: 15px;
+  }
+
+#inputfield {
+    margin-bottom: 2%;
+}
+
+#successtext {
+    margin-bottom: 2%;
+}
+
+#errortext {
+    margin-bottom: 2%;
+}
+
+
+
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

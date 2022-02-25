@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="./assets/css/theme.css">
 
+  <link rel="stylesheet" href="./assets/css/custom.css" >
 </head>
 <body>
 
@@ -352,8 +353,10 @@
         <div class="col-lg-3 py-3">
           <h5>Newsletter</h5>
           <form name="contact" method="POST" data-netlify="true" id="subscribe">
-            <input type="text" class="form-control" placeholder="Enter your mail.."> <br>
-            <button type="submit" class="btn btn-primary rounded-pill w-100" id="submit">Subscribe</button>
+            <input type="email" class="form-control" placeholder="Enter your mail.." id="inputfield">
+            <div id="successtext" style="display: none; text-align: center; color: green;">Thank you for subscribing!</div>
+            <div id="errortext" style="display: none; text-align: center; color: red;"></div>
+            <button type="submit" class="btn btn-primary" id="submit">Subscribe</button>
           </form>
 
           <div class="sosmed-button mt-4">
