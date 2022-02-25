@@ -52,6 +52,7 @@ FormButton.addEventListener('click', e => {
 
               setTimeout(() => {
                 error.style.display = 'none';
+                email.innerHTML = "";
               }, 3000);
             });
 
